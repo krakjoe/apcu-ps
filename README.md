@@ -10,3 +10,9 @@ Things To Do
 
 Persist sessions to disk on shutdown
 Add some ini configuration for session cache
+
+
+How To
+======
+
+

@@ -101,12 +101,20 @@ ps_module ps_mod_apcu =
     php_session_create_id
 };
 
+/* {{{ apcups_deps [] */
+const zend_module_dep apcups_deps[] = {
+    ZEND_MOD_REQUIRED("apcu")
+    ZEND_MOD_END
+}; /* }}} */
+
 /* {{{ apcups_module_entry
  */
 zend_module_entry apcups_module_entry = {
 #if ZEND_MODULE_API_NO >= 20010901
-	STANDARD_MODULE_HEADER,
+	STANDARD_MODULE_HEADER_EX,
 #endif
+    NULL,
+    apcups_deps,
 	"apcups",
 	NULL,
 	PHP_MINIT(apcups),
