@@ -3,13 +3,13 @@ APCu PS Module
 
 This module uses the APCu allocator, but a separate APCu cache to store sessions.
 
-NOTE: APCu will need to be configured with enough shared memory to store sessions, this is hugely dependant on your application.
+*NOTE:* _APCu will need to be configured with enough shared memory to store sessions, this is hugely dependant on your application._
 
 Things To Do
 ============
 
-Persist sessions to disk on shutdown
-Add some ini configuration for session cache
+* Persist sessions to disk on shutdown
+* Allow configuration of PS cache via INI
 
 How To
 ======
