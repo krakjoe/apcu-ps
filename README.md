@@ -11,8 +11,19 @@ Things To Do
 Persist sessions to disk on shutdown
 Add some ini configuration for session cache
 
-
 How To
 ======
 
+Simply call
 
+```php
+session_module_name("apcu");
+```
+
+Before
+
+```php
+session_start();
+```
+
+And you are ready to go !!
